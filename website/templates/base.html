@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+
+        {% endblock %}
+    </title>
+    <style>
+        header{
+            width: 100%;
+            height: 15%;
+            background-color: #55AD9B;
+        }
+        body{
+            margin: 0;
+        }
+        nav{
+            text-align: center;
+            padding: 2%;
+        }
+        a{
+            color: #D8EFD3;
+            margin: 15px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+        <nav>
+            <a href="">A</a>
+            <a href="">B</a>
+            <a href="">C</a>
+            <a href="">D</a>
+        </nav>
+    </header>
+    {% block body %}
+    {% endblock %}
+</body>
+</html>
